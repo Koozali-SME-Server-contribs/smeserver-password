@@ -4,7 +4,7 @@
 
 %define name smeserver-password
 %define version 1.2.0
-%define release 16
+%define release 17
 
 Summary: SME Server password panel
 Name: %{name}
@@ -16,13 +16,16 @@ Source: %{name}-%{version}.tar.xz
 
 BuildRoot: /var/tmp/%{name}-%{version}-%{release}-buildroot
 BuildArchitectures: noarch
-BuildRequires: e-smith-devtools
-Requires: e-smith-formmagick >= 1.4.0-12
+BuildRequires: smeserver-devtools
+Requires: smeserver-formmagick >= 1.4.0-12
 
 %description
 Smeserver addon panel to change password strength and password ageing
 
 %changelog
+* Sun Sep 08 2024 fix-e-smith-pkg.sh by Trevor Batley <trevor@batley.id.au> 1.2.0-17.sme
+- Fix e-smith references in smeserver-password [SME: 12732]
+
 * Sat Sep 07 2024 cvs2git.sh aka Brian Read <brianr@koozali.org> 1.2.0-16.sme
 - Roll up patches and move to git repo [SME: 12338]
 
