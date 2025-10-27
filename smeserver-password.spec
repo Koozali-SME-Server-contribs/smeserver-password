@@ -4,7 +4,7 @@
 
 %define name smeserver-password
 %define version 1.2.0
-%define release 17
+%define release 18
 
 Summary: SME Server password panel
 Name: %{name}
@@ -23,6 +23,9 @@ Requires: smeserver-formmagick >= 1.4.0-12
 Smeserver addon panel to change password strength and password ageing
 
 %changelog
+* Mon Oct 27 2025 Vasarhelyi Zsolt <zsoltv@koozali.org> 1.2.0-18.sme
+- remove use_authtok from pam config when ldap auth is enabled [SME: 13254]
+
 * Sun Sep 08 2024 fix-e-smith-pkg.sh by Trevor Batley <trevor@batley.id.au> 1.2.0-17.sme
 - Fix e-smith references in smeserver-password [SME: 12732]
 
