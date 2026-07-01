@@ -8,28 +8,16 @@
 use esmith::util;
 use esmith::util::network;
 use esmith::ConfigDB::UTF8;
-use esmith::AccountsDB;
-use esmith::NetworksDB::UTF8;
-use esmith::HostsDB;
-use esmith::DomainsDB::UTF8;
+use esmith::AccountsDB::UTF8;
+use Mojo::Util qw(decode);
 
 use constant FALSE => 0;
 use constant TRUE  => 1;
 
 
 #The most common ones - open DB when required.
-#my $cdb; 
-#my $adb; 
-#my $ndb; 
-#my $hdb; 
-#my $ddb; 
-
-#The most common ones - you might want to use these if you need to make sure that the DB is refreshed.
-$cdb = esmith::ConfigDB::UTF8->open()   || die("Couldn't open config db");
-$adb = esmith::AccountsDB->open() || die("Couldn't open Accounts db");
-#$ndb = esmith::NetworksDB->open() || die("Couldn't open Network db");
-#$hdb = esmith::HostsDB::UTF8->open() 	  || die("Couldn't open Hosts db");
-#$ddb = esmith::DomainsDB::UTF8->open()  || die("Couldn't open Domains db");
+my $cdb; 
+my $adb; 
 
 sub do_extras {
 	# Trigger on routeid in URL, like this: hpps:://<domain>/<packagename>x/<routeid>?<other_possible_params>
@@ -79,7 +67,7 @@ sub do_extras {
 
 # Get singleton data for each panel
 
-	sub get_data_for_panel_PARAMS {
+sub get_data_for_panel_PARAMS {
 		# Return a hash with the fields required which will be loaded into the shared data 
 		my $c = shift;
 		# If this is a selection from the DB, then be sure to have something like this:
@@ -98,7 +86,8 @@ sub do_extras {
 		#	'PwdWarn'=>'PwdWarn contents',
 		#	'LockAccount'=>'LockAccount contents',
 		#	'DateReset'=>'DateReset contents',
-		#	
+		#
+		$cdb = esmith::ConfigDB::UTF8->open()   || die("Couldn't open config db");
 		# so that it works if the DB key does not exist or param is ''
 		$cdb->reload();
 		my %ret = (
@@ -183,7 +172,7 @@ sub get_Table1 {
 
 #after sucessful modify or create or whatever and submit then perfom (if the params validate)
 
-	sub perform_PARAMS {
+sub perform_PARAMS {
 		my $c = shift;
 		my $pdo_data = shift; #Data hash as parameter
 		my $ret = '';
@@ -214,7 +203,7 @@ sub get_Table1 {
 
 sub save_password_policy {
     my $c    = shift;   
-
+    $cdb = esmith::ConfigDB::UTF8->open()   || die("Couldn't open config db");
     $cdb->reload();
     my $key = $cdb->get('passwordstrength');
     return $c->l('pdo_CANNOT_SAVE_DB') unless $key;
@@ -264,6 +253,7 @@ sub create_link{
 sub get_value {
   my $fm = shift;
   my $item = shift;
+  $cdb = esmith::ConfigDB::UTF8->open()   || die("Couldn't open config db");
   return ($cdb->get($item)->value());
 }
 
@@ -271,6 +261,7 @@ sub get_prop {
   my ($fm, $item, $prop) = @_;
   warn "You must specify a record key"    unless $item;
   warn "You must specify a property name" unless $prop;
+  $cdb = esmith::ConfigDB::UTF8->open()   || die("Couldn't open config db");
   my $record = $cdb->get($item) or warn "Couldn't get record for $item";
   return $record ? $record->prop($prop) : undef;
 }
@@ -334,6 +325,7 @@ sub get_users_table
 {
 	my $c = shift;
 	my @data = ();
+	$adb = esmith::AccountsDB::UTF8->open() || die("Couldn't open Accounts db");
 	for my $user ($adb->users)
 		{
 		my $passset = $user->prop('PasswordSet') || 'no';
@@ -342,8 +334,8 @@ sub get_users_table
 			$star = $c->l('ACCOUNT_LOCKED');
 		}
 		my $key = $user->key;
-        my $expiration = `chage -l "$key" 2>/dev/null | grep 'Password expires' | cut -d ':' -f 2`;
-        my $lastchange = `chage -l "$key" 2>/dev/null | grep -i 'last' | cut -d ':' -f 2`;
+        my $expiration = decode('UTF-8',`chage -l "$key" 2>/dev/null | grep 'Password expires' | cut -d ':' -f 2`);
+        my $lastchange = decode('UTF-8',`chage -l "$key" 2>/dev/null | grep -i 'last' | cut -d ':' -f 2`);
 
         my $passage = $user->prop('PasswordAge') || 'no';
         my $checked = ($passage eq 'yes') ? ' checked' : '';
@@ -365,7 +357,7 @@ sub get_users_table
 
 sub modify_password_age_for_users {
     my $c = shift;
-
+    $adb = esmith::AccountsDB::UTF8->open() || die("Couldn't open Accounts db");
     $adb->reload();
     my $ret = '';
     my @acctName;

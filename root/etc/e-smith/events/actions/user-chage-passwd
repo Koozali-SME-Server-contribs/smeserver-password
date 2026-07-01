@@ -56,11 +56,11 @@ push @accounts, $adb->users;
 			if ($resetdate eq 'yes')
 			{
 			#ok set chage -d parameter to today
-			system "chage -M $pwdage -W $pwdwarn -d `date +%F`  $name";
+			system "chage -M $pwdage -W $pwdwarn -d `date +%F` -I -1 $name";
 			}
 			else
 			{
-			system "chage -M $pwdage -W $pwdwarn $name";
+			system "chage -M $pwdage -W $pwdwarn -I -1 $name";
 			}
 		}
 		else

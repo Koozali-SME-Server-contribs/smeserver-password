@@ -28,13 +28,22 @@
 		<h3 class='subh1'><%=l('pdo_Password_strength')%></h3>
 	
 		<p class='paragraph para1'>
-			%==l('pdo_Password_strength_can_be_set',l('pdo_default_length'))
+			%==l('pdo_Password_strength_can_be_set')
+			<ul><li>
+			%=="<b>".l('pdo_Password_none')."</b>: ".l('pdo_Password_strength_none',l('pdo_default_length'))
+			</li><li>
+			%=="<b>".l('pdo_Password_normal')."</b>: ".l('pdo_Password_strength_normal')
+                        </li><li>
+                        %=="<b>".l('pdo_Password_intermediate')."</b>: ".l('pdo_Password_strength_interm')
+                        </li><li>
+                        %=="<b>".l('pdo_Password_strong')."</b>: ".l('pdo_Password_strength_strong')
+			</li></ul>
 		</p>
 	
 		<p><span class=label>
 			%=l('pdo_Admin')
 		</span><span class=data>
-			% my @Admin_options = [['Strong' => 'strong'], ['Intermediate' => 'intermediate'], ['Normal' => 'normal'], ['None' => 'none']];
+			% my @Admin_options = [[l('pdo_Password_strong') => 'strong'], [l('pdo_Password_intermediate') => 'intermediate'], [l('pdo_Password_normal') => 'normal'], [l('pdo_Password_none') => 'none']];
 			% param 'Admin' => $pdo_data->{Admin} unless param 'Admin';
 			%= select_field 'Admin' => @Admin_options, class => 'input', id => 'Admin_select'
 		<br></span>	</p>
