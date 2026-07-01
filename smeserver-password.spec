@@ -3,8 +3,8 @@
 # Name: Stephen Noble
 
 %define name smeserver-password
-%define version 1.2.0
-%define release 18
+%define version 1.3.0
+%define release 1
 
 Summary: SME Server password panel
 Name: %{name}
@@ -23,6 +23,9 @@ Requires: smeserver-formmagick >= 1.4.0-12
 Smeserver addon panel to change password strength and password ageing
 
 %changelog
+* Mon Jun 29 2026 Brian Read <brianr@koozali.org> 1.3.0-1.sme
+- Add in SM2 panel [SME: 13357]
+
 * Mon Oct 27 2025 Vasarhelyi Zsolt <zsoltv@koozali.org> 1.2.0-18.sme
 - remove use_authtok from pam config when ldap auth is enabled [SME: 13254]
 

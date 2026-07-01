@@ -5,16 +5,17 @@
 # for his Acctinfo.pm (getpwnams and ChopDec functions)
 # http://jeremy.zawodny.com/perl/AcctInfo/index.html
 
-package esmith;
+#package esmith;
 use strict;
 use Errno;
-use esmith::AccountsDB;
+use esmith::AccountsDB::UTF8;
+use esmith::ConfigDB::UTF8;
 use Date::Format;
 use Date::Parse;
 use Text::Template;
 
 my $adb = esmith::AccountsDB->open_ro() or die "Couldnt' open AccountsDB\n";
-my $db = esmith::ConfigDB->open() or die "Couldnt' open ConfigDB\n";
+my $db = esmith::ConfigDB::UTF8->open() or die "Couldnt' open ConfigDB\n";
 my @accounts = $adb->get('admin');
 
 push @accounts, $adb->users;

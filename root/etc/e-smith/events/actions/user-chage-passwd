@@ -24,10 +24,10 @@
 use strict;
 use Errno;
 use esmith::AccountsDB;
-use esmith::ConfigDB;
+use esmith::ConfigDB::UTF8;
 
 my $adb = esmith::AccountsDB->open_ro() || die "Couldnt' open AccountsDB\n";
-my $db = esmith::ConfigDB->open()  || die "Couldnt' open ConfigDB\n";
+my $db = esmith::ConfigDB::UTF8->open()  || die "Couldnt' open ConfigDB\n";
 
 my $pwdaging = $db->get('passwordaging');
 my $pwdage = $pwdaging->prop('PwdAge');
