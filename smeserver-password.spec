@@ -4,7 +4,7 @@
 
 %define name smeserver-password
 %define version 1.3.0
-%define release 3
+%define release 4
 
 Summary: SME Server password panel
 Name: %{name}
@@ -23,6 +23,9 @@ Requires: smeserver-formmagick >= 1.4.0-12
 Smeserver addon panel to change password strength and password ageing
 
 %changelog
+* Thu Jul 02 2026 Brian Read <brianr@koozali.org> 1.3.0-4.sme
+- Comment out lexicon validation code in spec file as no more SM1 [SME: 13357]
+
 * Thu Jul 02 2026 Jean-Philippe Pialasse <jpp@koozali.org> 1.3.0-3.sme
 - remove sm1 panel and translations [SME: 13357]
 - move olde translations to sm2
@@ -201,12 +204,12 @@ Smeserver addon panel to change password strength and password ageing
 %setup
 
 %build
-LEXICONS=$(find root/etc/e-smith/locale/ -type f )
+#LEXICONS=$(find root/etc/e-smith/locale/ -type f )
 
-for lexicon in $LEXICONS
-do
-    /sbin/e-smith/validate-lexicon $lexicon
-done
+#for lexicon in $LEXICONS
+#do
+#    /sbin/e-smith/validate-lexicon $lexicon
+#done
 
 perl createlinks
 
