@@ -25,10 +25,6 @@ event_link("user-passwd-expiration",$event,"135");
 
 use File::Basename;
 
-my $panel = "manager";
-
-panel_link("passwordopt", $panel);
-
 my $event = "password-modify";
 
 event_link("user-chage-passwd",$event,"30");
