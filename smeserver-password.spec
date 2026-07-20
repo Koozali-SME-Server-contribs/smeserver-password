@@ -4,7 +4,7 @@
 
 %define name smeserver-password
 %define version 1.3.0
-%define release 4
+%define release 5
 
 Summary: SME Server password panel
 Name: %{name}
@@ -23,6 +23,9 @@ Requires: smeserver-formmagick >= 1.4.0-12
 Smeserver addon panel to change password strength and password ageing
 
 %changelog
+* Mon Jul 20 2026 Brian Read <brianr@koozali.org> 1.3.0-5.sme
+- Add UTF8 where needed in DB open calls [SME: 13666]
+
 * Thu Jul 02 2026 Brian Read <brianr@koozali.org> 1.3.0-4.sme
 - Comment out lexicon validation code in spec file as no more SM1 [SME: 13357]
 
