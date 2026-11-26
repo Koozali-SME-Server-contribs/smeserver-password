@@ -1,0 +1,159 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: smeserver-manager Passwordopt module\n"
+"POT-Creation-Date: 2026-11-26 11:03+0000\n"
+"PO-Revision-Date: 2026-11-26 11:03+0000\n"
+"Last-Translator: unassigned\n"
+"Language-Team: unassigned\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-tw\n"
+
+msgid "Password (advanced)"
+msgstr "(en) Password (advanced)"
+
+msgid "pdo_Activate_password_aging"
+msgstr "啟用密碼時效"
+
+msgid "pdo_Admin"
+msgstr "管理員密碼"
+
+msgid "pdo_Aging?"
+msgstr "時效？"
+
+msgid "pdo_And_password_minimum_length_(which"
+msgstr "(en) And password minimum length %1, Can be set:"
+
+msgid "pdo_Block_account_on_password_expiration?"
+msgstr "密碼過期時鎖定帳號？"
+
+msgid "pdo_CANNOT_SAVE_DB"
+msgstr "(en) pdo_CANNOT_SAVE_DB"
+
+msgid "pdo_Expire_on"
+msgstr "過期"
+
+msgid "pdo_Fullname"
+msgstr "全名"
+
+msgid "pdo_Ibays"
+msgstr "Ibays密碼"
+
+msgid "pdo_If_you_want_to_know"
+msgstr "(en) If you want to know more about passwords Then please refer to the&nbsp;<a href=\"https://wiki.koozali.org/SME_Server:Documentation:Administration_Manual:Chapter9#Changing_User_Passwords\">Wiki</a>."
+
+msgid "pdo_Last_modified"
+msgstr "最後修正"
+
+msgid "pdo_Modify"
+msgstr "(en) Modify"
+
+msgid "pdo_Note"
+msgstr "過期"
+
+msgid "pdo_Number_of_days_during_which"
+msgstr "密碼有效的天數"
+
+msgid "pdo_Number_of_days_of_warning"
+msgstr "密碼修改前的警告天數"
+
+msgid "pdo_Number_of_unique_passwords_to"
+msgstr "Number of unique passwords to remember"
+
+msgid "pdo_PARAMS_panel_action_was_successful"
+msgstr "成功修改密碼屬性"
+
+msgid "pdo_PASSWORD_AGEING_DESC"
+msgstr "<![CDATA[ <h2>密碼時效</h2>您可設定全區（設定'啟動密碼時效'旗標成'確定'）或個別使用者的密碼時效。<br>此亦適用於遭鎖定或無密碼之帳號。<br><strong>注意：</strong>密碼時效不適用於管理者帳號。<br> ]]>"
+
+msgid "pdo_PASSWORD_HISTORY_DESC"
+msgstr "<![CDATA[ <h2>Password history</h2> Password history prevents users from reusing passwords (select 0 to disable) ]]>"
+
+msgid "pdo_PASSWORD_STRENGTH_DESC"
+msgstr "<![CDATA[ <h2>密碼長度</h2>密碼長度可被設定成從'無'到'強'<ul> <li>強 - 必須通過所有預設的破解資料庫測試與常規測試</li> <li>普通 - 至少需要一個數字（0-9）、一個大寫字母（[A-Z]）、一個小寫字母（[a-z]）、一個特殊字元（/-?）且不少於6個字元。</li> <li>無 - 無密碼檢查</li> </ul> <strong>注意：</strong>改變密碼長度並不影響既有保存密碼。<br> ]]>"
+
+msgid "pdo_Password_(advanced)"
+msgstr "密碼 (高級)"
+
+msgid "pdo_Password_History"
+msgstr "(en) Password History"
+
+msgid "pdo_Password_aging"
+msgstr "(en) Password aging"
+
+msgid "pdo_Password_history_prevents_users_from"
+msgstr "(en) Password history prevents users from reusing passwords select 0 to disabled."
+
+msgid "pdo_Password_intermediate"
+msgstr "(en) Intermediate"
+
+msgid "pdo_Password_length_(min_of_6)"
+msgstr "(en) Password length (min of 6)"
+
+msgid "pdo_Password_none"
+msgstr "無"
+
+msgid "pdo_Password_normal"
+msgstr "普通"
+
+msgid "pdo_Password_strength"
+msgstr "(en) Password strength"
+
+msgid "pdo_Password_strength_can_be_set"
+msgstr "(en) Password strength can be set from 'none' to 'Strong'"
+
+msgid "pdo_Password_strength_interm"
+msgstr "(en) the password requires to pass a Cracklib dictionary check on top of the normal setting checks."
+
+msgid "pdo_Password_strength_none"
+msgstr "(en) the password can be anything as no checking is done other than the minimum length %1 of characters."
+
+msgid "pdo_Password_strength_normal"
+msgstr "(en) the password requires at least 1 upper (A-Z), 1 lower (a-z) on top of the none setting checks."
+
+msgid "pdo_Password_strength_strong"
+msgstr "(en) the password requires to have at least 1 digit (0-9) and 1 special character (/-?) on top of the intermediate setting checks."
+
+msgid "pdo_Password_strong"
+msgstr "強"
+
+msgid "pdo_SAVE"
+msgstr "(en) Save"
+
+msgid "pdo_Save"
+msgstr "(en) Save"
+
+msgid "pdo_Set_today_as_last_modification"
+msgstr "設定今日為最後修改日期"
+
+msgid "pdo_To_enable_aging_set_Activate"
+msgstr "(en) To enable aging set Activate password aging to yes. Then select each user you want aging enabled for setting Activate password aging to No disables aging check for all users. But keep your user settings in case you activate the aging back This can be done for locked or passwordless accounts too. <br><strong>Note</strong>: password aging does not apply to the admin account."
+
+msgid "pdo_User"
+msgstr "使用者"
+
+msgid "pdo_Users"
+msgstr "使用者密碼"
+
+msgid "pdo_Users_list"
+msgstr "(en) Users list"
+
+msgid "pdo_You_can_set_password_strength"
+msgstr "您可設定密碼長度和時效"
+
+msgid "pdo_cannot_save_db"
+msgstr "保存密碼屬性出錯"
+
+msgid "pdo_default_length"
+msgstr "(en) (default is 12)"
+
+msgid "pdo_signal_failed"
+msgstr "(en) Signal-event failed"
+
+msgid "pdo_template_expand_failed"
+msgstr "(en) pdo_template_expand_failed"
+
+# --- obsolete: no longer present in the English source ---
+#~ msgid "pdo_Userss_list"
+#~ msgstr "使用者列表"

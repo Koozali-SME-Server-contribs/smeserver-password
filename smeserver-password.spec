@@ -4,7 +4,7 @@
 
 %define name smeserver-password
 %define version 1.3.0
-%define release 5
+%define release 6
 
 Summary: SME Server password panel
 Name: %{name}
@@ -23,6 +23,9 @@ Requires: smeserver-formmagick >= 1.4.0-12
 Smeserver addon panel to change password strength and password ageing
 
 %changelog
+* Thu Nov 26 2026 Brian Read <brianr@koozali.org> 1.3.0-6.sme
+- Add in po files [SME: ]
+
 * Mon Jul 20 2026 Brian Read <brianr@koozali.org> 1.3.0-5.sme
 - Add UTF8 where needed in DB open calls [SME: 13666]
 
@@ -35,7 +38,7 @@ Smeserver addon panel to change password strength and password ageing
 
 * Wed Jul 01 2026 Jean-Philippe Pialasse <jpp@koozali.org> 1.3.0-2.sme
 - prevent inactive acocutn from beeing locked [SME: 6778]
-- utf8 fixups
+- utf8 Add in po filesups
 - translation improvement
 
 * Mon Jun 29 2026 Brian Read <brianr@koozali.org> 1.3.0-1.sme
@@ -44,7 +47,7 @@ Smeserver addon panel to change password strength and password ageing
 * Mon Oct 27 2025 Vasarhelyi Zsolt <zsoltv@koozali.org> 1.2.0-18.sme
 - remove use_authtok from pam config when ldap auth is enabled [SME: 13254]
 
-* Sun Sep 08 2024 fix-e-smith-pkg.sh by Trevor Batley <trevor@batley.id.au> 1.2.0-17.sme
+* Sun Sep 08 2024 Add in po files-e-smith-pkg.sh by Trevor Batley <trevor@batley.id.au> 1.2.0-17.sme
 - Fix e-smith references in smeserver-password [SME: 12732]
 
 * Sat Sep 07 2024 cvs2git.sh aka Brian Read <brianr@koozali.org> 1.2.0-16.sme
@@ -97,10 +100,10 @@ Smeserver addon panel to change password strength and password ageing
 
 * Sun Jul 14 2013 JP Pialasse <tests@pialasse.com> 1.0.0-32.sme
 - apply locale 2013-07-14 patch
-- also fix for some languages [SME: 4920]
+- also Add in po files for some languages [SME: 4920]
 
 * Sat Jun 22 2013 JP Pialasse <tests@pialasse.com> 1.0.0-31.sme
-- workaround for fixing  [SME: 5915]
+- workaround for Add in po filesing  [SME: 5915]
 
 * Thu Jun 20 2013 JP Pialasse <tests@pialasse.com> 1.0.0-30.sme
 - Add Update event to createlinks english translation of panel [SME: 4920]
@@ -192,8 +195,8 @@ Smeserver addon panel to change password strength and password ageing
 
 * Wed Jan 24 2007 Blaz <gxs@sishell.net>
 - 1.0.0-03
-- Cosmetics fixes
-- English typos fixing
+- Cosmetics Add in po fileses
+- English typos Add in po filesing
 
 * Wed Jan 24 2007 Stefano Zamboni <zamboni@mind-at-work.it>
 - 1.0.0-02

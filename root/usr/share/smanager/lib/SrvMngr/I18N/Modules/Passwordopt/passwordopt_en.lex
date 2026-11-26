@@ -46,3 +46,9 @@
 'pdo_PASSWORD_AGEING_DESC' => '',
 'pdo_PASSWORD_STRENGTH_DESC' => '',
 'pdo_PASSWORD_HISTORY_DESC' => '',
+
+# --- keys below auto-added by lex-to-po.pl: found via l()/maketext() in
+# controller/templates but missing from this file. Please verify wording. ---
+'Password (advanced)' => 'Password (advanced)',  # AUTO-ADDED, needs review -- found at passwordopt.html.ep:22, passwordopt.html.ep:4
+'pdo_CANNOT_SAVE_DB' => 'pdo_CANNOT_SAVE_DB',  # AUTO-ADDED, needs review -- found at Passwordopt-Custom.pm:209
+'pdo_template_expand_failed' => 'pdo_template_expand_failed',  # AUTO-ADDED, needs review -- found at Passwordopt-Custom.pm:239

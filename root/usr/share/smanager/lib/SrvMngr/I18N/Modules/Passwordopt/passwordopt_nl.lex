@@ -13,7 +13,7 @@
 'pdo_Password_none' => 'Geen',
 'pdo_Password_normal' => 'Normaal',
 'pdo_Password_strong' => 'Sterk',
-'pdo_Userss_list' => 'Gebruikers overzicht',
+# ORPHANED (no longer in passwordopt_en.lex; kept for reference, commented out by lex-to-po.pl): 'pdo_Userss_list' => 'Gebruikers overzicht',
 'pdo_User' => 'Gebruiker',
 'pdo_Fullname' => 'Volledige naam',
 'pdo_Aging?' => 'Veroudering?',

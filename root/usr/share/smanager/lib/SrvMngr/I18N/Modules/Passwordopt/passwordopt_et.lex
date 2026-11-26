@@ -13,7 +13,7 @@
 'pdo_Password_none' => 'Pole',
 'pdo_Password_normal' => 'Normaalne',
 'pdo_Password_strong' => 'Tugev',
-'pdo_Userss_list' => 'Kasutajate nimekiri',
+# ORPHANED (no longer in passwordopt_en.lex; kept for reference, commented out by lex-to-po.pl): 'pdo_Userss_list' => 'Kasutajate nimekiri',
 'pdo_User' => 'Kasutaja',
 'pdo_Fullname' => 'Täisnimi',
 'pdo_Aging?' => 'Aeguv?',

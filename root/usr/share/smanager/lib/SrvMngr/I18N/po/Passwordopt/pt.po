@@ -1,0 +1,159 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: smeserver-manager Passwordopt module\n"
+"POT-Creation-Date: 2026-11-26 11:03+0000\n"
+"PO-Revision-Date: 2026-11-26 11:03+0000\n"
+"Last-Translator: unassigned\n"
+"Language-Team: unassigned\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt\n"
+
+msgid "Password (advanced)"
+msgstr "(en) Password (advanced)"
+
+msgid "pdo_Activate_password_aging"
+msgstr "Período de Validade da Senha ativado"
+
+msgid "pdo_Admin"
+msgstr "Senha do Admin"
+
+msgid "pdo_Aging?"
+msgstr "Validade?"
+
+msgid "pdo_And_password_minimum_length_(which"
+msgstr "(en) And password minimum length %1, Can be set:"
+
+msgid "pdo_Block_account_on_password_expiration?"
+msgstr "Bloquear conta quando a senha expirar?"
+
+msgid "pdo_CANNOT_SAVE_DB"
+msgstr "(en) pdo_CANNOT_SAVE_DB"
+
+msgid "pdo_Expire_on"
+msgstr "Expira em"
+
+msgid "pdo_Fullname"
+msgstr "Nome Completo"
+
+msgid "pdo_Ibays"
+msgstr "Senha dos Compartilhamentos"
+
+msgid "pdo_If_you_want_to_know"
+msgstr "(en) If you want to know more about passwords Then please refer to the&nbsp;<a href=\"https://wiki.koozali.org/SME_Server:Documentation:Administration_Manual:Chapter9#Changing_User_Passwords\">Wiki</a>."
+
+msgid "pdo_Last_modified"
+msgstr "Última modificação"
+
+msgid "pdo_Modify"
+msgstr "(en) Modify"
+
+msgid "pdo_Note"
+msgstr "Nota"
+
+msgid "pdo_Number_of_days_during_which"
+msgstr "Número de dias durante os quais uma senha é válida"
+
+msgid "pdo_Number_of_days_of_warning"
+msgstr "Número de dias de aviso antes que mudar a senha seja compulsório"
+
+msgid "pdo_Number_of_unique_passwords_to"
+msgstr "Number of unique passwords to remember"
+
+msgid "pdo_PARAMS_panel_action_was_successful"
+msgstr "Propriedades da senha modificadas com sucesso"
+
+msgid "pdo_PASSWORD_AGEING_DESC"
+msgstr "<![CDATA[ <h2>Password aging</h2> To enable aging set Activate password aging to Yes, then select each user you want aging enabled for. <br>Setting Activate password aging to No disables aging check for all users, but keep your user settings in case you activate the aging back. <br>This can be done for locked or passwordless accounts too. <br><strong>Note:</strong> Password aging doesn't apply to admin account<br> ]]>"
+
+msgid "pdo_PASSWORD_HISTORY_DESC"
+msgstr "<![CDATA[ <h2>Password history</h2> Password history prevents users from reusing passwords (select 0 to disable) ]]>"
+
+msgid "pdo_PASSWORD_STRENGTH_DESC"
+msgstr "<![CDATA[ <h2>Password strength</h2> Password strength can be set from 'None' to 'Strong' <ul> <li>Strong - Must pass all default cracklib tests and all \"normal\" tests.</li> <li>Normal - Must have at least 1 digit (0-9), 1 upper ([A-Z]), 1 lower ([a-z]), 1 special char (/-?) and be longer than 6 characters.</li> <li>None - no password checking</li> </ul> <strong>Note:</strong> Change of password strength value doesn't affect currently stored passwords<br> ]]>"
+
+msgid "pdo_Password_(advanced)"
+msgstr "Senha (Avançado)"
+
+msgid "pdo_Password_History"
+msgstr "(en) Password History"
+
+msgid "pdo_Password_aging"
+msgstr "(en) Password aging"
+
+msgid "pdo_Password_history_prevents_users_from"
+msgstr "(en) Password history prevents users from reusing passwords select 0 to disabled."
+
+msgid "pdo_Password_intermediate"
+msgstr "(en) Intermediate"
+
+msgid "pdo_Password_length_(min_of_6)"
+msgstr "(en) Password length (min of 6)"
+
+msgid "pdo_Password_none"
+msgstr "Nenhuma"
+
+msgid "pdo_Password_normal"
+msgstr "Normal"
+
+msgid "pdo_Password_strength"
+msgstr "(en) Password strength"
+
+msgid "pdo_Password_strength_can_be_set"
+msgstr "(en) Password strength can be set from 'none' to 'Strong'"
+
+msgid "pdo_Password_strength_interm"
+msgstr "(en) the password requires to pass a Cracklib dictionary check on top of the normal setting checks."
+
+msgid "pdo_Password_strength_none"
+msgstr "(en) the password can be anything as no checking is done other than the minimum length %1 of characters."
+
+msgid "pdo_Password_strength_normal"
+msgstr "(en) the password requires at least 1 upper (A-Z), 1 lower (a-z) on top of the none setting checks."
+
+msgid "pdo_Password_strength_strong"
+msgstr "(en) the password requires to have at least 1 digit (0-9) and 1 special character (/-?) on top of the intermediate setting checks."
+
+msgid "pdo_Password_strong"
+msgstr "Forte"
+
+msgid "pdo_SAVE"
+msgstr "(en) Save"
+
+msgid "pdo_Save"
+msgstr "(en) Save"
+
+msgid "pdo_Set_today_as_last_modification"
+msgstr "Definir hoje como a data da última modificação"
+
+msgid "pdo_To_enable_aging_set_Activate"
+msgstr "(en) To enable aging set Activate password aging to yes. Then select each user you want aging enabled for setting Activate password aging to No disables aging check for all users. But keep your user settings in case you activate the aging back This can be done for locked or passwordless accounts too. <br><strong>Note</strong>: password aging does not apply to the admin account."
+
+msgid "pdo_User"
+msgstr "Usuário"
+
+msgid "pdo_Users"
+msgstr "Senha dos Usuários"
+
+msgid "pdo_Users_list"
+msgstr "(en) Users list"
+
+msgid "pdo_You_can_set_password_strength"
+msgstr "Você pode configurar a força da senha e seu período de validade"
+
+msgid "pdo_cannot_save_db"
+msgstr "Erro salvando propriedades da senha"
+
+msgid "pdo_default_length"
+msgstr "(en) (default is 12)"
+
+msgid "pdo_signal_failed"
+msgstr "(en) Signal-event failed"
+
+msgid "pdo_template_expand_failed"
+msgstr "(en) pdo_template_expand_failed"
+
+# --- obsolete: no longer present in the English source ---
+#~ msgid "pdo_Userss_list"
+#~ msgstr "Lista de Usuários"
